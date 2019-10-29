@@ -1,0 +1,1 @@
+This is a project to develop my coding skills and web development. I am using The Odin Project Web Development course that can be found at http://www.theodinproject.com/courses/web-development-101/lessons/html-css
