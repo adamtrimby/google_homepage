@@ -1,32 +1,64 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Google</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="viewer" id="viewport">
     <nav id="main_nav">
         <div class="left_nav">
             <a href="#">About</a>
             <a href="#">Store</a>
         </div>
         <div class="right_nav">
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <a href="#" class="app_icon">
-                <img src="images/google_apps_icon.png">
+            <a href="#" id="nav_line">Gmail</a>
+            <a href="#" id="nav_line">Images</a>
+            <a href="#">
+                <img class="app_icon" src="images/google_apps_icon.png" height="30px" width="30px">
             </a>
             <a href="#">
-                <button class="sign_in" type="button">Sign in</button>
+                <button class="sign_in" type="button" href="#">Sign in</button>
             </a>
         </div>
-
-
-
     </nav>
 
+<main>
+    <div class="google_logo">
+        <img alt="google" src="images/goggle_logo.png">
+    </div>
+    <form class="main_search">
+            <div id="magnify"></div>
+                <input class="searchbar" type="text" placeholder="Ask a question">
+            <div id="microphone"></div>
+        </div>
+        <div class="search_buttons">
+            <button class="button_search" type="submit">Google Search</button>
+            <button class="button_search" type="submit">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</main>
 
-
+<footer class="footer" id="fbar">
+    <div class="footer_top">
+        <p>United Kingdom</p>
+    </div>
+    <div class='footer_bottom'>
+        <nav id="footer_nav_left">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search Works</a>
+        </nav>
+        <nav id="footer_nav_right">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </nav>
+    </div>
+</footer>
+</div>
 
 
 </body>
+</html>
