@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     font-size: 13px;
+    margin: 0;
 }
 
 div {
@@ -30,6 +31,7 @@ div #viewport {
     padding-top: 30px;
     align-items: center;
     position: relative;
+    padding-left: 10px;
 }
 
 .left_nav a {
@@ -107,17 +109,24 @@ main {
 div .search {
     width: 500px;
     position: relative;
-    line-height: 44px;
+    vertical-align: middle;
 }
 
 input {
-    padding-left: 60px;
+    margin-left: 10px;
+    padding: 10px 200px 10px 0;
+    font-size: 14px;
+    border: none;
+    float: left;
+    vertical-align: middle;
 }
 
-.searchbar {
+
+.search_bar {
+    display: inline-block;
     position: relative;
     background: #fff;
-    display: flex;
+    display: inline-block;
     border-radius: 8px;
     border: 1px solid #dfe1e5;
     box-shadow: none;
@@ -130,6 +139,36 @@ input {
     line-height: 44px;
     font-size: 14px;
 }
+
+search_bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#magnifyGlass {
+    float: left;
+    height: 20px;
+    width: 20px;
+    padding: 10px 0 0 5px;
+}
+
+#magnifyGlass:hover {
+    cursor: pointer;
+}
+
+#microphone {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    vertical-align: middle;
+    float: right;
+    padding: 10px 5px 0 0;
+}
+
+#microphone:hover {
+    cursor: pointer;
+}
+
 
 div.search_buttons {
     position: relative;
@@ -151,6 +190,9 @@ div.search_buttons {
 
 .button_search:hover {
     cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
 
 form.main_search {
@@ -170,7 +212,7 @@ footer {
 }
 
 .footer_top {
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .footer_bottom {
@@ -183,7 +225,7 @@ footer {
 }
 
 #footer_nav_left a {
-    padding-left: 15px;
+    padding-left: 25px;
     color: #222;
     text-decoration: none;
 }
@@ -202,7 +244,7 @@ footer {
 }
 
 #footer_nav_right a {
-    padding-right: 27px;
+    padding-right: 15px;
     color: #222222;
     text-decoration: none;
 }
